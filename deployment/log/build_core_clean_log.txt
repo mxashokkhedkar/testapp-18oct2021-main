@@ -1,0 +1,9 @@
+Buildfile: \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\build_core.xml
+
+clean:
+   [delete] Deleting directory \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\model
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+

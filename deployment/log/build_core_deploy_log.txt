@@ -1,0 +1,9 @@
+Buildfile: \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 32 files to \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+
