@@ -1,0 +1,12 @@
+Buildfile: \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 30 source files to \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\run\bin
+
+package:
+      [jar] Building jar: \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 25 seconds
+
+

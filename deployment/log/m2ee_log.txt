@@ -1,0 +1,62 @@
+[rtlauncher:container$] INFO Container start took 39924. Ready to accept admin requests.
+Oct 18, 2021 6:07:23 PM org.hsqldb.persist.Logger logSevereEvent
+SEVERE: could not reopen database
+org.hsqldb.HsqlException: Database does not exists: \\Mac\Home\Documents\Mendix\testapp-18oct2021-main\deployment\data\database\hsqldb\default\default
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDataSource.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDataSource.getConnection(Unknown Source)
+	at org.apache.commons.dbcp2.DataSourceConnectionFactory.createConnection(DataSourceConnectionFactory.java:83)
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:357)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:134)
+	at com.mendix.connectionbus.connections.jdbc.ConnectionManager.getConnection(ConnectionManager.java:49)
+	at com.mendix.connectionbus.ConnectionBusInitializer.$anonfun$createConnection$1(ConnectionBusInitializer.scala:48)
+	at scala.util.Try$.apply(Try.scala:210)
+	at com.mendix.connectionbus.ConnectionBusInitializer.retry(ConnectionBusInitializer.scala:56)
+	at com.mendix.connectionbus.ConnectionBusInitializer.createConnection(ConnectionBusInitializer.scala:48)
+	at com.mendix.connectionbus.ConnectionBusInitializer.initialize(ConnectionBusInitializer.scala:40)
+	at com.mendix.connectionbus.ConnectionBusImpl.initialize(ConnectionBusImpl.java:338)
+	at com.mendix.basis.impl.MxRuntimeImplBase.initializeConnectionBus(MxRuntimeImplBase.java:500)
+	at com.mendix.basis.impl.MxRuntimeImplBase.start(MxRuntimeImplBase.java:314)
+	at com.mendix.m2ee.appcontainer.actions.StartAction.startRuntime(StartAction.java:48)
+	at com.mendix.m2ee.appcontainer.actions.StartAction.execute(StartAction.java:30)
+	at com.mendix.m2ee.appcontainer.server.handler.HttpAdminHandler.handle(HttpAdminHandler.java:129)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 18, 2021 6:07:24 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: Checkpoint start
+Oct 18, 2021 6:07:24 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose start
+Oct 18, 2021 6:07:24 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose synched
+Oct 18, 2021 6:07:24 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose script done
+Oct 18, 2021 6:07:24 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose end
+Oct 18, 2021 6:07:24 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: Checkpoint end - txts: 1
